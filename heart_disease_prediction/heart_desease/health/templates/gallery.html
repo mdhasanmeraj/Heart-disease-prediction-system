@@ -1,0 +1,201 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+<style>
+body {
+	background-color: rgb(249, 219, 244); 
+}
+.gal-img img {
+	width: 100%; /* Set the width to 100% of the parent container */
+	height: auto; /* Maintain aspect ratio */
+}
+</style>
+	<!-- gallery -->
+<div class="gallery py-5" id="gallery">
+	<div class="container py-xl-5 py-lg-3">
+		<div class="title-section mb-md-5 mb-4">
+			<h3 class="w3ls-title text-uppercase text-dark font-weight-bold text-center">Our Founders</h3>
+		</div>
+		<div class="gal-pop-style pt-xl-4">
+			<div class="row">
+				<div class="col-md-4 gal-img">
+					<a href="#gal1" title="Health Prediction"><img src="{% static 'images/g1.jpg' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3" style="color: rgb(10, 9, 10);">Dr. Emily Smith</p>
+				</div>
+				<div class="col-md-4 gal-img my-md-0 my-4">
+					<a href="#gal2" title="Health Prediction"><img src="{% static 'images/g8.jpg' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3" style="color: rgb(10, 9, 10);">Dr. Christopher Wilson</p>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal3" title="Health Prediction"><img src="{% static 'images/g3.jpg' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3" style="color: rgb(10, 9, 10);">Dr. Jessica Taylor</p>
+				</div>
+			</div>
+			<div class="row my-4">
+				<div class="col-md-4 gal-img">
+					<a href="#gal4" title="Health Prediction"><img src="{% static 'images/g9.jpg' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3" style="color: rgb(10, 9, 10);">Dr. Michael Brown</p>
+				</div>
+				<div class="col-md-4 gal-img my-md-0 my-4">
+					<a href="#gal5" title="Health Prediction"><img src="{% static 'images/blog1.jpg' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3"style="color: rgb(10, 9, 10);">Dr. Olivia Johnson</p>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal6" title="Health Prediction"><img src="{% static 'images/blog2.jpg' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3" style="color: rgb(10, 9, 10);">Dr. David Martinez</p>
+				</div>
+			</div>
+			<div class="row my-md-0 my-4">
+				<div class="col-md-4 gal-img">
+					<a href="#gal7" title="Health Prediction"><img src="{% static 'images/back.png' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3" style="color: rgb(10, 9, 10);">Dr. Andrew Miller</p>
+				</div>
+				<div class="col-md-4 gal-img my-md-0 my-4">
+					<a href="#gal8" title="Health Prediction"><img src="{% static 'images/bg.jpg' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3" style="color: rgb(10, 9, 10);">Dr. Sarah Clark</p>
+				</div>
+				<div class="col-md-4 gal-img">
+					<a href="#gal9" title="Health Prediction"><img src="{% static 'images/bg1.jpg' %}" alt="gallery"
+							class="img-fluid"></a>
+							<p class="text-center mt-3" style="color: rgb(10, 9, 10);">Dr. William Davis</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- popup-->
+<div id="gal1" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/g1.jpg' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+			<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+			<a class="close" href="#gallery">&times;</a> -->
+		<h5 class="text-name-pop mt-4">Dr. Emily Smith</h5>
+		<p class="mt-3">Dr. Emily Smith is a renowned specialist in preventive medicine with over 15 years of
+			experience. She is dedicated to promoting holistic health practices and personalized care for her patients.
+		</p>
+		<a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup -->
+<!-- popup-->
+<div id="gal2" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/g8.jpg' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+		<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+		<a class="close" href="#gallery">&times;</a> -->
+		<h5 class="text-name-pop mt-4">Dr. Christopher Wilson</h5>
+        <p class="mt-3">Dr. Christopher Wilson is a board-certified family physician with a focus on holistic wellness. He believes in a patient-centered approach to healthcare and emphasizes preventive measures.</p>
+        <a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup -->
+<!-- popup-->
+<div id="gal3" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/g3.jpg' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+		<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+		<a class="close" href="#gallery">&times;</a> -->
+		
+		<h5 class="text-name-pop mt-4">Dr. Jessica Taylor</h5>
+        <p class="mt-3">Dr. Jessica Taylor is an experienced dermatologist known for her expertise in skin care and aesthetic medicine. She is dedicated to helping her patients achieve healthy, radiant skin.</p>
+        <a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup3 -->
+<!-- popup-->
+<div id="gal4" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/g9.jpg' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+		<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+		<a class="close" href="#gallery">&times;</a> -->
+		<h5 class="text-name-pop mt-4">Dr. Michael Brown</h5>
+        <p class="mt-3">Dr. Michael Brown is an experienced cardiologist known for his expertise in cardiovascular health and disease prevention. He is committed to delivering personalized care to his patients.</p>
+        <a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup -->
+<!-- popup-->
+<div id="gal5" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/blog1.jpg' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+		<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+		<a class="close" href="#gallery">&times;</a> -->
+	
+
+
+
+		<h5 class="text-name-pop mt-4">Dr. Olivia Johnson</h5>
+        <p class="mt-3">Dr. Olivia Johnson is a leading expert in nutritional therapy and lifestyle medicine. With her compassionate approach, she has helped numerous patients achieve optimal health and wellness.</p>
+        <a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup -->
+<!-- popup-->
+<div id="gal6" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/blog2.jpg' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+		<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+		<a class="close" href="#gallery">&times;</a> -->
+		<h5 class="text-name-pop mt-4">Dr. David Martinez</h5>
+        <p class="mt-3">Dr. David Martinez is a respected gastroenterologist known for his expertise in digestive health and nutrition. He is dedicated to providing comprehensive and compassionate care to his patients.</p>
+        <a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup -->
+<!-- popup-->
+<div id="gal7" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/back.png' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+		<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+		<a class="close" href="#gallery">&times;</a> -->
+		<h5 class="text-name-pop mt-4">Dr. Andrew Miller</h5>
+        <p class="mt-3">Dr. Andrew Miller is a leading psychiatrist specializing in mental health and well-being. He is committed to providing personalized treatment plans tailored to each patient's unique needs.</p>
+        <a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup -->
+<!-- popup-->
+<div id="gal8" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/bg.jpg' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+		<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+		<a class="close" href="#gallery">&times;</a> -->
+		<h5 class="text-name-pop mt-4">Dr. Sarah Clark</h5>
+        <p class="mt-3">Dr. Sarah Clark is a dedicated obstetrician-gynecologist known for her compassionate care and expertise in women's health. She is committed to empowering women to make informed decisions about their health.</p>
+        <a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup -->
+<!-- popup-->
+<div id="gal9" class="popup-effect">
+	<div class="popup">
+		<img src="{% static 'images/bg1.jpg' %}" alt="Popup Image" class="img-fluid" />
+		<!-- <h5 class="text-name-pop mt-4">Health Prediction</h5>
+		<p class="mt-3">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+		<a class="close" href="#gallery">&times;</a> -->
+		<h5 class="text-name-pop mt-4">Dr. William Davis</h5>
+        <p class="mt-3">Dr. William Davis specializes in integrative medicine and has a passion for empowering individuals to take control of their health through education and lifestyle modifications.</p>
+        <a class="close" href="#gallery">&times;</a>
+
+
+
+	</div>
+</div>
+<!-- //popup -->
+{% endblock %} <!-- //gallery -->
